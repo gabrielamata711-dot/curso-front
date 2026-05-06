@@ -187,6 +187,26 @@ footer .footer-list {
   box-shadow: 0 4px 15px rgba(209, 77, 114, 0.1);
 }
 
+/* Esto hará que todos los cuadros de texto midan lo mismo */
+.grupo-input input,
+.grupo-input textarea {
+  width: 100%; /* Ocupan todo el ancho del contenedor rosa */
+  max-width: 300px; /* Pero con un límite para que no sean gigantes */
+  padding: 8px; /* Espacio interno para que el texto no toque los bordes */
+  border: 1px solid #ccc; /* Un borde fino y sutil */
+  border-radius: 5px; /* Bordes redondeados para que hagan juego con tu diseño */
+  box-sizing: border-box; /* Importante: para que el padding no agrande el ancho */
+  margin-top: 5px; /* Espacio entre el texto de arriba y el cuadro */
+}
+
+/* Para que el label (el texto de Nombre, Email) aparezca arriba del cuadro */
+.grupo-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los textos a la izquierda */
+  margin-bottom: 15px; /* Separa cada bloque de input entre sí */
+}
+
 @media (max-width: 600px) {
   header,
   footer {
