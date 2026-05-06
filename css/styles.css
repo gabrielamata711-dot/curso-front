@@ -207,6 +207,12 @@ footer .footer-list {
   margin-bottom: 15px; /* Separa cada bloque de input entre sí */
 }
 
+button:hover {
+  background-color: #d87093; /* Un rosa un poco más oscuro */
+  cursor: pointer; /* Cambia la flecha por la manito */
+  transition: 0.3s; /* Hace que el cambio sea suave */
+}
+
 @media (max-width: 600px) {
   header,
   footer {
